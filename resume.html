@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume | Satyam Shukla</title>
+    <meta name="description" content="Resume and professional experience of Satyam Shukla, Software Engineer.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <canvas id="particle-canvas"></canvas>
+
+    <header class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <span class="logo-bracket">&lt;</span>Satyam<span class="logo-dot">.</span>dev<span class="logo-bracket">/&gt;</span>
+            </a>
+            <nav class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="projects.html" class="nav-link">Projects</a>
+                <a href="resume.html" class="nav-link active">Resume</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <section class="page-hero">
+        <span class="section-tag">My Journey</span>
+        <h1>Resume</h1>
+        <p>Education, experience, and certifications</p>
+        <div class="section-divider" style="margin: 1rem auto 0;"></div>
+    </section>
+
+    <div class="resume-section">
+        <div class="resume-block">
+            <h2><i class="fas fa-graduation-cap"></i> Education</h2>
+            <div class="resume-item">
+                <h3>Bachelor of Technology — Computer Science & Engineering</h3>
+                <div class="resume-meta">University Name | 2020 – 2024</div>
+                <p>Focused on Data Structures, Algorithms, DBMS, Operating Systems, and Software Engineering. Graduated with distinction.</p>
+            </div>
+            <div class="resume-item">
+                <h3>Higher Secondary (XII) — Science</h3>
+                <div class="resume-meta">School Name | 2018 – 2020</div>
+                <p>Studied Physics, Chemistry, and Mathematics with Computer Science as an elective.</p>
+            </div>
+        </div>
+
+        <div class="resume-block">
+            <h2><i class="fas fa-briefcase"></i> Experience</h2>
+            <div class="resume-item">
+                <h3>Software Engineer Intern</h3>
+                <div class="resume-meta">Tech Company | Jun 2023 – Aug 2023</div>
+                <p>Developed RESTful APIs using Node.js and Express. Optimized database queries reducing response time by 40%. Collaborated with cross-functional teams to deliver features on schedule.</p>
+            </div>
+            <div class="resume-item">
+                <h3>Open Source Contributor</h3>
+                <div class="resume-meta">Various Projects | 2022 – Present</div>
+                <p>Contributed to multiple open-source projects including bug fixes, feature implementations, and documentation improvements across JavaScript and Python ecosystems.</p>
+            </div>
+        </div>
+
+        <div class="resume-block">
+            <h2><i class="fas fa-certificate"></i> Certifications</h2>
+            <div class="resume-item">
+                <h3>AWS Certified Cloud Practitioner</h3>
+                <div class="resume-meta">Amazon Web Services | 2024</div>
+            </div>
+            <div class="resume-item">
+                <h3>Meta Front-End Developer Professional Certificate</h3>
+                <div class="resume-meta">Coursera | 2023</div>
+            </div>
+            <div class="resume-item">
+                <h3>Python for Data Science — IBM</h3>
+                <div class="resume-meta">IBM | 2023</div>
+            </div>
+        </div>
+
+        <div class="resume-download">
+            <a href="#" class="btn btn-primary"><i class="fas fa-download"></i> Download Resume</a>
+        </div>
+    </div>
+
+    <footer class="footer" id="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <span class="logo-bracket">&lt;</span>Satyam<span class="logo-dot">.</span>dev<span class="logo-bracket">/&gt;</span>
+            </div>
+            <div class="footer-social">
+                <a href="https://github.com/" class="footer-social-link" aria-label="GitHub" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/" class="footer-social-link" aria-label="LinkedIn" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://twitter.com/" class="footer-social-link" aria-label="Twitter" target="_blank"><i class="fab fa-x-twitter"></i></a>
+                <a href="https://instagram.com/" class="footer-social-link" aria-label="Instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+            <div class="footer-copy"><p>All rights reserved &copy; 2026 Satyam Shukla.</p></div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

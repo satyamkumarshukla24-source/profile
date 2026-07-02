@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Satyam Shukla | Software Engineer</title>
+    <meta name="description" content="Portfolio of Satyam Shukla — Software Engineer specializing in full-stack development, cloud technologies, and scalable applications.">
+    <meta name="keywords" content="Satyam Shukla, Software Engineer, Full Stack Developer, Portfolio">
+    <meta property="og:title" content="Satyam Shukla | Software Engineer">
+    <meta property="og:description" content="Portfolio of Satyam Shukla featuring software engineering projects, skills, and professional profile.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Particle Canvas -->
+    <canvas id="particle-canvas"></canvas>
+
+    <!-- Navigation -->
+    <header class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <span class="logo-bracket">&lt;</span>Satyam<span class="logo-dot">.</span>dev<span class="logo-bracket">/&gt;</span>
+            </a>
+            <nav class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link active">Home</a>
+                <a href="projects.html" class="nav-link">Projects</a>
+                <a href="resume.html" class="nav-link">Resume</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <p class="hero-greeting">Hello Universe! 👋</p>
+                <h1 class="hero-title">
+                    I'm <span class="hero-name" id="typed-name"></span><span class="cursor">|</span>
+                </h1>
+                <p class="hero-subtitle">Software Engineer</p>
+                <p class="hero-description">
+                    Building elegant solutions to complex problems. Passionate about crafting scalable, 
+                    user-centric applications with modern technologies.
+                </p>
+                <div class="hero-cta">
+                    <a href="contact.html" class="btn btn-primary">
+                        <i class="fas fa-paper-plane"></i> Contact Me
+                    </a>
+                    <a href="resume.html" class="btn btn-outline">
+                        <i class="fas fa-user"></i> About Me
+                    </a>
+                </div>
+                <div class="hero-social">
+                    <a href="https://github.com/" class="social-icon" aria-label="GitHub" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/" class="social-icon" aria-label="LinkedIn" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://twitter.com/" class="social-icon" aria-label="Twitter" target="_blank"><i class="fab fa-x-twitter"></i></a>
+                    <a href="mailto:satyam@example.com" class="social-icon" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="hero-image-wrapper">
+                    <img src="developer-illustration.png" alt="Satyam Shukla - Software Engineer" id="hero-illustration">
+                    <div class="hero-image-glow"></div>
+                </div>
+                <div class="floating-badge badge-1">
+                    <i class="fab fa-react"></i> React
+                </div>
+                <div class="floating-badge badge-2">
+                    <i class="fab fa-python"></i> Python
+                </div>
+                <div class="floating-badge badge-3">
+                    <i class="fab fa-aws"></i> AWS
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-tag">Who I Am</span>
+                <h2 class="section-title">About Me</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        I am a passionate <strong>Software Engineer</strong> with expertise in modern web technologies 
+                        and cloud-native architectures. I thrive on bringing ideas to life through clean, efficient code. 
+                        With a strong foundation in computer science and a keen eye for technical trends, I strive to 
+                        build applications that are not only functional but also deliver exceptional user experiences.
+                    </p>
+                    <p>
+                        From designing responsive front-end interfaces to architecting robust back-end systems, 
+                        I enjoy every stage of the development lifecycle. My approach combines creative problem-solving 
+                        with engineering best practices to deliver solutions that scale.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <span class="stat-number" data-count="15">0</span><span class="stat-plus">+</span>
+                            <span class="stat-label">Projects</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-count="8">0</span><span class="stat-plus">+</span>
+                            <span class="stat-label">Technologies</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-count="5">0</span><span class="stat-plus">+</span>
+                            <span class="stat-label">Certifications</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-tag">What I Know</span>
+                <h2 class="section-title">My Skills</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card" data-aos="fade-up">
+                    <div class="skill-icon"><i class="fab fa-java"></i></div>
+                    <span class="skill-name">Java</span>
+                    <div class="skill-bar"><div class="skill-fill" data-width="90%"></div></div>
+                </div>
+                <div class="skill-card" data-aos="fade-up">
+                    <div class="skill-icon"><i class="fab fa-python"></i></div>
+                    <span class="skill-name">Python</span>
+                    <div class="skill-bar"><div class="skill-fill" data-width="85%"></div></div>
+                </div>
+                <div class="skill-card" data-aos="fade-up">
+                    <div class="skill-icon"><i class="fab fa-js-square"></i></div>
+                    <span class="skill-name">JavaScript</span>
+                    <div class="skill-bar"><div class="skill-fill" data-width="88%"></div></div>
+                </div>
+                <div class="skill-card" data-aos="fade-up">
+                    <div class="skill-icon"><i class="fab fa-react"></i></div>
+                    <span class="skill-name">React</span>
+                    <div class="skill-bar"><div class="skill-fill" data-width="82%"></div></div>
+                </div>
+                <div class="skill-card" data-aos="fade-up">
+                    <div class="skill-icon"><i class="fab fa-node-js"></i></div>
+                    <span class="skill-name">Node.js</span>
+                    <div class="skill-bar"><div class="skill-fill" data-width="80%"></div></div>
+                </div>
+                <div class="skill-card" data-aos="fade-up">
+                    <div class="skill-icon"><i class="fab fa-aws"></i></div>
+                    <span class="skill-name">AWS</span>
+                    <div class="skill-bar"><div class="skill-fill" data-width="75%"></div></div>
+                </div>
+                <div class="skill-card" data-aos="fade-up">
+                    <div class="skill-icon"><i class="fab fa-git-alt"></i></div>
+                    <span class="skill-name">Git</span>
+                    <div class="skill-bar"><div class="skill-fill" data-width="92%"></div></div>
+                </div>
+                <div class="skill-card" data-aos="fade-up">
+                    <div class="skill-icon"><i class="fas fa-database"></i></div>
+                    <span class="skill-name">Databases</span>
+                    <div class="skill-bar"><div class="skill-fill" data-width="78%"></div></div>
+                </div>
+                <div class="skill-card" data-aos="fade-up">
+                    <div class="skill-icon"><i class="fab fa-docker"></i></div>
+                    <span class="skill-name">Docker</span>
+                    <div class="skill-bar"><div class="skill-fill" data-width="70%"></div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Expertise Section -->
+    <section class="expertise" id="expertise">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-tag">What I Do</span>
+                <h2 class="section-title">Excellence & Expertise</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="expertise-timeline">
+                <div class="expertise-card left">
+                    <div class="expertise-icon"><i class="fas fa-palette"></i></div>
+                    <div class="expertise-content">
+                        <h3>Web Design</h3>
+                        <p>Designing immersive, responsive interfaces that balance aesthetics with accessibility and load-time performance across every device.</p>
+                    </div>
+                </div>
+                <div class="expertise-card right">
+                    <div class="expertise-icon"><i class="fas fa-code"></i></div>
+                    <div class="expertise-content">
+                        <h3>Software Development</h3>
+                        <p>Delivering end-to-end applications — from clean architecture and scalable APIs to automated testing and cloud-native deployments.</p>
+                    </div>
+                </div>
+                <div class="expertise-card left">
+                    <div class="expertise-icon"><i class="fas fa-mobile-alt"></i></div>
+                    <div class="expertise-content">
+                        <h3>Mobile Development</h3>
+                        <p>Building cross-platform mobile applications with seamless UX, native performance, and real-time data synchronization.</p>
+                    </div>
+                </div>
+                <div class="expertise-card right">
+                    <div class="expertise-icon"><i class="fas fa-database"></i></div>
+                    <div class="expertise-content">
+                        <h3>Database Architecture</h3>
+                        <p>Architecting data layers, tuning performance, automating backups, and keeping mission-critical information highly available and secure.</p>
+                    </div>
+                </div>
+                <div class="expertise-card left">
+                    <div class="expertise-icon"><i class="fas fa-cloud"></i></div>
+                    <div class="expertise-content">
+                        <h3>Cloud & DevOps</h3>
+                        <p>Engineering cloud-native solutions with CI/CD pipelines, container orchestration, and infrastructure-as-code for reliable deployments.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <span class="logo-bracket">&lt;</span>Satyam<span class="logo-dot">.</span>dev<span class="logo-bracket">/&gt;</span>
+            </div>
+            <div class="footer-social">
+                <a href="https://github.com/" class="footer-social-link" aria-label="GitHub" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/" class="footer-social-link" aria-label="LinkedIn" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://twitter.com/" class="footer-social-link" aria-label="Twitter" target="_blank"><i class="fab fa-x-twitter"></i></a>
+                <a href="https://instagram.com/" class="footer-social-link" aria-label="Instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+            <div class="footer-copy">
+                <p>All rights reserved &copy; 2026 Satyam Shukla.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
